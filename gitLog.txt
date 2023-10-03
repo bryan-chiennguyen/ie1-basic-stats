@@ -1,0 +1,85 @@
+* 16c18ef Test commit
+| * eb5459b Updated the BasicStatsTest class to be consistent with the use of the Strategy design pattern.
+| * 4112144 Modified the BasicStatsGUI class to use the new SimpleStatView class.
+| * 83c951d Added the SimpleStatView class and its helper classes to apply the Strategy design pattern for the simple statistics (count, mean, median, maximum). Modified the BasicStatsGUI class to use this new class. Updated the BasicStatsTest class to be consistent with this.
+| * 184c857 Modified the BasicStatsTest class to add the testViewUndoAllowed and testViewUndoDisallowed methods. Also modified this class to add the setupAndCheckViewPreconditions helper method.
+| * bff46a6 Modified the AddNumberViewController class update method to always clear itself.
+| * fc42b42 Extended the BasicStatsApp to support undo functionality. Modified the BasicStatsModel class to add the undo method. Added the UndoViewController class. Modified the BasicStatsGUI class to add an UndoViewController and the undo method. Modified the NumbersView class update method to support both add number and undo. Modified the BasicStatsTest class to be consistent with these modifications. Updated the README and javadoc.
+| * 29a7fc6 Bug fixed the BasicStatsTest class testViewResetConfiguration method. The mean and median were in the incorrect order.
+| * c005f6d Modified the AddNumberViewController constructor arguments
+| * 9285b87 Added support for testing
+| * 5c83ee1 Added the testing for the MVC design pattern
+| * 2327878 Needed to commit the new maximum method.
+| * e15ddd9 Updated the README file to briefly describe the new maximum functionality.
+| * 55314a9 Generated the latest javadoc
+| * bbc7989 Added test cases for the Model, View, and Controller. Added test cases for the new maximum functionality.
+| * 22ade6b Implemented the maximum functionality. Modified the BasicStats class to add the maximum method. Added the MaximumView class. Modified the GUI to used the MaximumView. Updated the README file to document the maximum method.
+| * 5931b58 Modified the GUI class to apply the Composite design pattern. Added the simple View classes that are the Components. Refactored most of the view-related code from the GUI to the simple View classes.
+| * c1e742e The GUI's initial configuration has all the text components be empty. The reset configuration should be the same. This is a bug fix to ensure that.
+| * 2fde3d8 Needed to import the BasicStats class
+| * 581227d Listed the program features
+| * 79172f4 Added the View interface. Modified the BasicStatsGUI class to implement the View interface.
+| * 2458652 Added the gui package. Refactored the BasicStats and BasicStatsGUI classes to the gui package.
+| * 588f820 Added a new BasicStatsGUI class to contain the views and controllers for the MVC architecure pattern. Refactored the relevant code elements from the BasicStatsApp class to the BasicStatsGUI class.
+| * 115c401 For the MVC architecture pattern, added the model package. Refactored the BasicStatsModel class into the model package.
+| * 43c8cc2 Refactored the relevant code elements (data field and getArrayDouble method) from the BasicStatsApp class into the BasicStatsModel class.
+| * 79c45fd Added an initial version of the BasicStatsModel class to support the MVC architecture pattern. This class currently specifies the API but does not implement the method bodies.
+| * ccf23e4 Fixed typos in the README file
+| * f059371 Added the APP_TITLE constant and used it
+| * be60207 Updated the README and build file to better support building and running the app
+| * 477d230 Updated the README file to document how to build and run the app. Modified the build.xml file to be able to generated javadoc. Renamed some source files to improve understandability.
+| * 69eccb5 Want to include only the source files and not the class files.
+|/  
+| * da90e87 Updated README.md
+| * aad2f3e Updated the test command
+| * 0f983c1 tweaked the program features description
+| * 913a5d8 cleared up running instructions
+| * 61ffac5 clearing up step 5
+| * ddc3fac clearing up step 4
+| * 9712b04 clearing up step 3
+| * c2b3163 clearing up step 2
+| * c2111cc added more info about Ant
+| * 3e2a0a5 improved description
+| * fc5bd50 Whitespace changes only: removed tabs.
+| * a2583e6 Updated README file.
+| * 4fa7109 Tweaked the README.
+| * f60980c Updated README
+| * a5c4194 Updated .gitignore
+| * 5643f60 Refactored things into BasicStats class
+| * 01da475 Rehauled overrides to be first methods seen
+| * ea570cf Needed to update Override annotation for controllers
+| * cc717c6 Updated Override annotations
+| * a9f6094 Large code refactoring within Views
+| * e0ca8e1 Updated the README
+| * 749685f Refactored classes and added insertion sort to BasicStats
+| * c18d700 Added more comments and refactorings
+| * d75539f Placed BasicStats into its own Util folder
+| * 4b5c0cf Organized classes into directories
+| * f7f175d Commented and cleaned up the source code
+| * bda5f02 More refactorings
+| * 6462c91 Removed autogenerated stubs
+| * c5fc3b7 Large refactoring for implementation using BasicStats. Added Mode View and accepts now Doubles instead of integers
+| * 1f1ab27 Laid out implementation for model, view, and controller
+| * 946af6f Added skeleton for Views
+| * 6c57e68 Added skeletons for Controller and Model
+| * d2539a7 Replaced Arrays.sort with in-house bubble sort implementation
+| * 0a1490a Refactored code to make more readable
+| * 97621b1 Added test for mean
+| * 6b81a2a Added functionality and GUI for mode computation
+|/  
+* a7b1a7d Added GUI functionality for mean and median
+* 769e45d Added simple window application for NotSoGood
+* aed4559 Added test for mode
+* d58867a Implemented test for median
+* 18ead4a Added test signatures for median and mode
+* 6dc2769 Uncommented test for median and mean  in testCentralTendency
+* e939129 Added implementation for mode
+* 4fdb84b Added implementation for median
+* 9282ce3 Added comments to signatures of median and mode
+* 5d42d92 Added signatures for median and mode
+* 1df95cf Added a .gitignore file to ignore binaries.
+* 0bf184b Added a build file to build and test the implementation.
+* 7e95c76 Added a first test case for central tendency measures.
+* c0a8627 Added a first draft of the toy implementation.
+* ba319db Updated README.
+* 9b1bbb2 Initial commit
